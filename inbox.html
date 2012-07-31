@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/s36mobile.js"></script>
+</head> 
+<body> 
+<style type="text/css">
+	.pad{width:95%;margin:0 auto;}
+	.the-logo{width:185px;height:188px;margin:0 auto;margin-top:20px;margin-bottom:10px;}
+	.ui-alert{display:none;}
+	.ui-alert-title{display:inline-block; width:92%; margin-top:5px;}
+	.ui-alert-close{display:inline-block; width:8%; margin-top:0px;}
+	.ui-alert-subtitle{font-size:85%; margin:-.3em 0 1em;}
+</style>
+<div data-role="page" id="page11">
+			<script type="text/javascript">
+				$(document).bind('pagebeforeload',function(event,data){
+					var token = $('#token').val();
+		
+					if(data.dataUrl == '/mobile/inbox.html'){		
+						get_token(token);
+					}
+					
+				});
+			</script>
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Inbox
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html" data-theme="b" data-icon="arrow-l">
+                                Back to Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div>
+                    <a href="#page3" data-transition="slidefade">
+                        Click for single feedback sample
+                    </a>
+                </div>
+                <div style="">
+                    <img style="width: 303px; height: 352px" src="http://assets.codiqa.com/ps/6887/16e9fb2fc5417abefeedback230512.jpg" />
+                </div>
+            </div>
+        </div><!-- /page -->
+
+</body>
+</html>

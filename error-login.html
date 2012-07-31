@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#form-login').submit(function(e){
+
+				var status = login();
+				if(status){
+					return false;
+				}
+				else{
+					return true;
+				}
+				
+			});
+		});
+		
+		function login(){
+			var username = $('#username').val();
+			var password = $('#password').val();
+				
+			var login_data = {
+				username : username,
+				password : password
+			}
+				
+			$.ajax({
+				url: 'includes/request_login.php',
+				data: login_data,
+				type: 'POST',
+				success: function(response){
+					console.log(response)
+				},
+				error: function(e){
+					display_error(e);
+				}
+			});
+							
+			return true;
+		}
+		
+		function display_error(mes){
+			
+		}
+	</script>
+</head> 
+<body> 
+<style type="text/css">
+	body{background:#FFF;}
+	.pad{width:95%;margin:0 auto;}
+	.the-logo{width:185px;height:188px;margin:0 auto;margin-top:20px;margin-bottom:10px;}
+</style>
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Welcome to 36Stories</h1>
+	</div><!-- /header -->
+    	<div class="the-logo" style="background:#FFF">
+        	<h1>Error Logging In!</h1>
+        </div>
+        <a href="index.html" data-role="button">Return</a>
+</div><!-- /page -->
+
+</body>
+</html>

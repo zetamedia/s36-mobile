@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/s36mobile.js"></script>
+    
+</head> 
+<body> 
+<style type="text/css">
+	.pad{width:95%;margin:0 auto;}
+	.the-logo{width:185px;height:188px;margin:0 auto;margin-top:20px;margin-bottom:10px;}
+	.ui-alert{display:none;}
+	.ui-alert-title{display:inline-block; width:92%; margin-top:5px;}
+	.ui-alert-close{display:inline-block; width:8%; margin-top:0px;}
+	.ui-alert-subtitle{font-size:85%; margin:-.3em 0 1em;}
+</style>
+<input type="hidden" id="token" value="pakyu ka henry castor!" />
+<div data-role="page">
+	<div data-role="header">
+		<h1>Welcome to 36Stories</h1>
+	</div><!-- /header -->
+    <div class="ui-bar ui-bar-e ui-alert">				
+        <h3 class="ui-alert-title">Error Found.</h3><div class="ui-alert-close">
+        <a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="e" title="Dismiss" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-e">
+        <span class="ui-btn-inner ui-btn-corner-all">
+            <span class="ui-btn-text">Dismiss</span>
+            <span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span>
+        </span></a>
+        </div>
+        <p class="ui-alert-subtitle"></p>
+    </div>
+    	<div class="the-logo">
+        	<img src="images/36logo2.png" width="185" height="188" title="36Stories" alt="36Stories" />
+        </div>
+        <div class="pad">
+            <form action="" method="post" id="form-login" >
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="" placeholder="Username"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="username">Password:</label>
+                    <input type="password" name="password" id="password" value="" placeholder="Password"/>
+                </div>
+                <div data-role="fieldcontain">
+                    <input type="submit" name="submit" id="submit" data-theme="b" data-icon="star" data-iconpos="left" value="Login to 36Stories" />
+                </div>
+            </form>
+        </div>
+</div><!-- /page -->
+</body>
+</html>

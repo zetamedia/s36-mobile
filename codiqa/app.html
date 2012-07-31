@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+        <script type="text/javascript">
+			$(document).ready(function(){
+			
+			});
+		</script>
+        
+    </head>
+    <body>
+        <div data-role="page" id="page8" style="background: url('http://assets.codiqa.com/ps/6887/74d3cda1311d99d3background.jpg') repeat">
+            <div data-role="content">
+                <div style=" text-align:center">
+                    <img style="width: 70%; height: 70%" src="http://assets.codiqa.com/ps/6887/627359767c8c3878logo.gif" />
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput1">
+                            Username / email
+                        </label>
+                        <input id="textinput1" placeholder="acme@acme.com" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput2">
+                            Password
+                        </label>
+                        <input id="textinput2" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page1" data-icon="gear" data-iconpos="left">
+                    Login
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h5>
+                    36Stories
+                </h5>
+            </div>
+            <div data-theme="a" data-role="header">
+            </div>
+            <div data-theme="a" data-role="header">
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <strong>
+                                Welcome Acme!
+                            </strong>
+                            You have
+                            <span style="color: rgb(51, 153, 102); " data-mce-style="color: #339966;">
+                                <em>
+                                    15 new feedback
+                                </em>
+                            </span>
+                            since your last visit.
+                        </span>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            Access your inbox below to view them now.
+                        </span>
+                    </p>
+                </div>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="">
+                        <a href="#page11" data-transition="slide">
+                            Inbox
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page14" data-transition="slide">
+                            Published
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Featured
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page5" data-transition="slide">
+                            Filed Feedback
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page6" data-transition="slide">
+                            Request For Feedback
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                </ul>
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                </ul>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="text-align: center;" data-mce-style="text-align: center;">
+                        <span style="text-decoration: underline; font-size: x-small; " data-mce-style="text-decoration: underline; font-size: x-small;">
+                            <strong>
+                                View full site
+                            </strong>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Single Feedback
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page11" data-theme="b" data-icon="arrow-l">
+                                Back to Inbox
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div style="">
+                    <img style="width: 298px; height: 159px" src="http://assets.codiqa.com/ps/6887/e1c394ca802767d0single-feedback.jpg" />
+                </div>
+                <a data-role="button" data-inline="true" data-transition="none" data-theme="b" href="#page3" data-icon="check" data-iconpos="left">
+                    Publish
+                </a>
+                <a data-role="button" data-inline="true" data-transition="fade" data-theme="e" href="#page3" data-icon="star" data-iconpos="left">
+                    Feature
+                </a>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu3">
+                    </label>
+                    <select name="selectmenu3" id="selectmenu3" data-theme="b">
+                        <option value="option1">
+                            File as feedback..
+                        </option>
+                        <option value="General">
+                            General
+                        </option>
+                        <option value="Bugs/Problem">
+                            Bugs/Problem
+                        </option>
+                        <option value="Suggestions">
+                            Suggestions
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu4">
+                    </label>
+                    <select name="selectmenu4" id="selectmenu4" data-theme="b">
+                        <option value="option1">
+                            Fast forward to..
+                        </option>
+                        <option value="CEO@acme.com">
+                            CEO
+                        </option>
+                        <option value="Sales@acme.com">
+                            Sales
+                        </option>
+                        <option value="support@acme.com">
+                            Customer Care
+                        </option>
+                    </select>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="c" href="#page12" data-icon="back" data-iconpos="left">
+                    Reply to sender
+                </a>
+                <a data-role="button" data-transition="fade" data-theme="a" href="#page3" data-icon="delete" data-iconpos="left">
+                    Delete
+                </a>
+                <div>
+                    <p style="text-align: center; ">
+                        <span style="text-decoration: underline; font-size: x-small; ">
+                            <b>
+                                View full site
+                            </b>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page6">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <h3>
+                    Request for feedback
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            Drop a request to someone you want to get feedback from. You can choose
+                            to leave a custom comment below, or none at all.
+                        </span>
+                    </p>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput3">
+                            Name *required
+                        </label>
+                        <input id="textinput3" placeholder="John Doe" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput4">
+                            Email* required
+                        </label>
+                        <input id="textinput4" placeholder="customer@address.com" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea3">
+                            Comments (optional)
+                        </label>
+                        <textarea id="textarea3" placeholder="Hey, I'd like to get your feedback on our services/product.">
+                        </textarea>
+                    </fieldset>
+                </div>
+                <input type="submit" data-theme="b" value="Request For Feedback" />
+                <div>
+                    <p>
+                        <span style="font-size: small; ">
+                            An email will be sent to your receipient - which will include a link to
+                            send in feedback to your website.
+                        </span>
+                    </p>
+                </div>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="arrow-l">
+                                Back to Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page11">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Inbox
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="arrow-l">
+                                Back to Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div>
+                    <a href="#page3" data-transition="slidefade">
+                        Click for single feedback sample
+                    </a>
+                </div>
+                <div style="">
+                    <img style="width: 303px; height: 352px" src="http://assets.codiqa.com/ps/6887/16e9fb2fc5417abefeedback230512.jpg" />
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page13">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Published Feedback
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page14" data-theme="b" data-icon="arrow-l">
+                                Back to Published
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div style="">
+                    <img style="width: 298px; height: 159px" src="http://assets.codiqa.com/ps/6887/3c7da6481ae199basingle-feedback.jpg" />
+                </div>
+                <a data-role="button" data-inline="true" data-transition="none" data-theme="b" href="#page3" data-icon="minus" data-iconpos="left">
+                    Un-Publish and file it away as..
+                </a>
+                <div>
+                    <p>
+                        <span style="font-size: small; ">
+                            Unpublish your live feedback and file it away in your categories for review
+                            later.
+                        </span>
+                    </p>
+                </div>
+                <a data-role="button" data-inline="true" data-transition="fade" data-theme="e" href="#page3" data-icon="star" data-iconpos="left">
+                    Feature this feedback
+                </a>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu5">
+                    </label>
+                    <select name="selectmenu5" id="selectmenu5" data-theme="b">
+                        <option value="option1">
+                            Fast forward to..
+                        </option>
+                        <option value="">
+                            Sales
+                        </option>
+                        <option value="">
+                            Customer Support
+                        </option>
+                        <option value="">
+                            CEO
+                        </option>
+                    </select>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="d" href="#page12" data-icon="back" data-iconpos="left">
+                    Reply to sender
+                </a>
+                <a data-role="button" data-transition="fade" data-theme="a" href="#page3" data-icon="delete" data-iconpos="left">
+                    Delete
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page14">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Published
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="arrow-l">
+                                Back to Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            Feedback listed here are all published live on your website.
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <a href="#page13" data-transition="slidefade">
+                        Click for single feedback sample
+                    </a>
+                </div>
+                <div style="">
+                    <img style="width: 298px; height: 357px" src="http://assets.codiqa.com/ps/6887/b9140542051e7b4epublished.jpg" />
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page15">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Published Feedback
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page14" data-theme="b" data-icon="arrow-l">
+                                Back to Published
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div style="">
+                    <img style="width: 299px; height: 151px" src="http://assets.codiqa.com/ps/6887/55e54a7886fe4178sample.jpg" />
+                </div>
+                <a data-role="button" data-inline="true" data-transition="fade" data-theme="e" href="#page3" data-icon="star" data-iconpos="left">
+                    Un-Feature this feedback
+                </a>
+                <div>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <strong>
+                                Note:
+                            </strong>
+                            &nbsp;
+                        </span>
+                        <span style="font-size: small; ">
+                            Un-featuring this feedback will just make it a normal Published feedback
+                            - this feedback still remains visible on your website.
+                        </span>
+                    </p>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu1">
+                    </label>
+                    <select name="selectmenu1" id="selectmenu1" data-theme="b">
+                        <option value="General">
+                            File as feedback..
+                        </option>
+                        <option value="General">
+                            General
+                        </option>
+                        <option value="Miscelleanous">
+                            Miscelleanous
+                        </option>
+                        <option value="Suggestions">
+                            Suggestions
+                        </option>
+                        <option value="Bugs/Problems">
+                            Bugs/Problems
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu2">
+                    </label>
+                    <select name="selectmenu2" id="selectmenu2" data-theme="b">
+                        <option value="General">
+                            Fast Forward To...
+                        </option>
+                        <option value="ceo@acme.com">
+                            CEO
+                        </option>
+                        <option value="sales@acme.com">
+                            Sales Team
+                        </option>
+                        <option value="support@acme.com">
+                            Customer Care
+                        </option>
+                    </select>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="d" href="#page3" data-icon="back" data-iconpos="left">
+                    Reply to sender
+                </a>
+                <a data-role="button" data-transition="fade" data-theme="a" href="#page3" data-icon="delete" data-iconpos="left">
+                    Delete
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page12">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Reply to sender
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page3" data-theme="b" data-icon="arrow-l">
+                                Back to feedback
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <strong>
+                                Andy Tan (United States)
+                            </strong>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <strong>
+                                Email:
+                            </strong>
+                            <a href="mailto:unhappy-customer@company.com">
+                                unhappy-customer@company.com
+                            </a>
+                            <a href="mailto:unhappy-customer@company.com" data-mce-href="mailto:unhappy-customer@company.com">
+                            </a>
+                        </span>
+                    </p>
+                    <p>
+                        <font size="2">
+                            <strong>
+                                Date:
+                            </strong>
+                            12th May 2012
+                        </font>
+                    </p>
+                    <p>
+                        <span style="font-size: small; " data-mce-style="font-size: small;">
+                            <strong>
+                                Feedback:
+                            </strong>
+                            &nbsp;I hate it when the Acme product dysfunctions and I have to call
+                            your crappy customer service. When will you provide customers with efficient
+                            people to deal with product problems??
+                        </span>
+                    </p>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea2">
+                            Reply to customer
+                        </label>
+                        <textarea id="textarea2" placeholder="">
+                            We got your feedback and we'd like to make things right. Our service reps
+                            will call you very shortly!
+                        </textarea>
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="fade" href="#page3">
+                    Reply
+                </a>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

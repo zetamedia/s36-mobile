@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/s36mobile.js"></script>    
+</head> 
+<body> 
+<style type="text/css">
+	.pad{width:95%;margin:0 auto;}
+	.the-logo{width:185px;height:188px;margin:0 auto;margin-top:20px;margin-bottom:10px;}
+	.ui-alert{display:none;}
+	.ui-alert-title{display:inline-block; width:92%; margin-top:5px;}
+	.ui-alert-close{display:inline-block; width:8%; margin-top:0px;}
+	.ui-alert-subtitle{font-size:85%; margin:-.3em 0 1em;}
+</style>
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h5>
+            36Stories
+        </h5>
+    </div>
+    <div data-theme="a" data-role="header">
+    </div>
+    <div data-theme="a" data-role="header">
+    </div>
+    <div data-role="content">
+        <div>
+            <p>
+                <span style="font-size: small; " data-mce-style="font-size: small;">
+                    <strong>
+                        Welcome Acme!
+                    </strong>
+                    You have
+                    <span style="color: rgb(51, 153, 102); " data-mce-style="color: #339966;">
+                        <em>
+                            15 new feedback
+                        </em>
+                    </span>
+                    since your last visit.
+                </span>
+                <span style="font-size: small; " data-mce-style="font-size: small;">
+                    Access your inbox below to view them now.
+                </span>
+            </p>
+        </div>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="c">
+                <a href="inbox.html" data-transition="slide">
+                    Inbox
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="published.html" data-transition="slide">
+                    Published
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="javascript:;" data-transition="slide" onclick="get_token()">
+                    Featured
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page5" data-transition="slide" onclick="clear_token()">
+                    Filed Feedback
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page6" data-transition="slide">
+                    Request For Feedback
+                </a>
+            </li>
+        </ul>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+        </ul>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+        </ul>
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#page1" data-theme="" data-icon="">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p style="text-align: center;" data-mce-style="text-align: center;">
+                <span style="text-decoration: underline; font-size: x-small; " data-mce-style="text-decoration: underline; font-size: x-small;">
+                    <strong>
+                        View full site
+                    </strong>
+                </span>
+            </p>
+        </div>
+    </div>
+</div><!-- /page -->
+
+</body>
+</html>

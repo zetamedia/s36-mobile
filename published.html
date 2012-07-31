@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/s36mobile.js"></script>    
+</head> 
+<body> 
+<style type="text/css">
+	.pad{width:95%;margin:0 auto;}
+	.the-logo{width:185px;height:188px;margin:0 auto;margin-top:20px;margin-bottom:10px;}
+	.ui-alert{display:none;}
+	.ui-alert-title{display:inline-block; width:92%; margin-top:5px;}
+	.ui-alert-close{display:inline-block; width:8%; margin-top:0px;}
+	.ui-alert-subtitle{font-size:85%; margin:-.3em 0 1em;}
+</style>
+<div data-role="page" id="page13">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Published Feedback
+                </h3>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html" data-theme="b" data-icon="arrow-l">
+                                Back to Published
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div style="">
+                    <img style="width: 298px; height: 159px" src="http://assets.codiqa.com/ps/6887/3c7da6481ae199basingle-feedback.jpg" />
+                </div>
+                <a data-role="button" data-inline="true" data-transition="none" data-theme="b" href="#page3" data-icon="minus" data-iconpos="left">
+                    Un-Publish and file it away as..
+                </a>
+                <div>
+                    <p>
+                        <span style="font-size: small; ">
+                            Unpublish your live feedback and file it away in your categories for review
+                            later.
+                        </span>
+                    </p>
+                </div>
+                <a data-role="button" data-inline="true" data-transition="fade" data-theme="e" href="#page3" data-icon="star" data-iconpos="left">
+                    Feature this feedback
+                </a>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu5">
+                    </label>
+                    <select name="selectmenu5" id="selectmenu5" data-theme="b">
+                        <option value="option1">
+                            Fast forward to..
+                        </option>
+                        <option value="">
+                            Sales
+                        </option>
+                        <option value="">
+                            Customer Support
+                        </option>
+                        <option value="">
+                            CEO
+                        </option>
+                    </select>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="d" href="#page12" data-icon="back" data-iconpos="left">
+                    Reply to sender
+                </a>
+                <a data-role="button" data-transition="fade" data-theme="a" href="#page3" data-icon="delete" data-iconpos="left">
+                    Delete
+                </a>
+            </div>
+        </div><!-- /page -->
+
+</body>
+</html>
