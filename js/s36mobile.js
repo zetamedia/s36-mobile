@@ -44,6 +44,10 @@
 			$('.ui-alert-close').click(function(){
 				hide_error();
 			});
+			$('#logout').click(function(){
+				logout();
+			});
+			
 		});
 		
 		/* 
@@ -85,6 +89,25 @@
 							
 			return true;
 		}
+		
+		function logout(){
+			$.ajax({
+				url: 'http://dev.gearfish.com/api/logout',
+				type: 'POST',
+				dataType: 'json',
+				success: function(response){
+					console.log(response);
+					clear_token();
+					$.mobile.changePage("index.html", {
+							transition: "fade"
+						});
+				},
+				error: function(e){
+					display_error(e);
+				}
+			});
+		}
+		
 		function hide_error(){
 			$('.ui-alert').slideUp('fast');
 		}
@@ -100,6 +123,7 @@
 		
 		function clear_token(){
 			localStorage.removeItem('token');
+			console.log('Token Is Cleared');
 		}
 		
 		function check_token(){
